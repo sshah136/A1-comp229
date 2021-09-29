@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
   <!-- Logo created using free logo generator on https://howtostartanllc.com/logo-maker -->
-    <a class="navbar-brand" href="/"><img src="/Assets/images/logo.svg" alt="" width="50" height="50"></a>
+    <a class="navbar-brand" href="/"><img src="/Assets/images/logo.svg" alt="" width="50" height="50"> &nbsp&nbsp&nbsp Sahil's Express Portfolio</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -15,23 +15,23 @@
         <% } else  { %>
         <li class="nav-item">
         <% } %>
-          <a class="nav-link" href="/home"><i class="fas fa-lg fa-laptop-house"></i> Home </a>
+          <a class="nav-link" href="/home"><i class="fas fa-house-user"></i> Home </a>
         </li>
 
-        <% if (title == "About") { %>
+        <% if (title == "About Me") { %>
         <li class="nav-item active">
         <% } else  { %>
         <li class="nav-item">
         <% } %>
-          <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> About </a>
+          <a class="nav-link" href="/about"><i class="far fa-question-circle"></i> About Me </a>
         </li>
 
-        <% if (title == "Products") { %>
+        <% if (title == "Projects") { %>
         <li class="nav-item active">
         <% } else  { %>
         <li class="nav-item">
         <% } %>
-          <a class="nav-link" href="/products"><i class="fab fa-elementor"></i> Products </a>
+          <a class="nav-link" href="/projects"><i class="fas fa-archive"></i> Projects </a>
         </li>
 
         <% if (title == "Services") { %>
@@ -39,15 +39,15 @@
         <% } else  { %>
         <li class="nav-item">
         <% } %>
-          <a class="nav-link" href="/services"><i class="fas fa-cogs"></i> Services </a>
+          <a class="nav-link" href="/services"><i class="fas fa-tools"></i> Services </a>
         </li>
 
-        <% if (title == "Contact") { %>
+        <% if (title == "Contact Me") { %>
         <li class="nav-item active">
         <% } else  { %>
         <li class="nav-item">
         <% } %>
-          <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact </a>
+          <a class="nav-link" href="/contact"><i class="far fa-address-book"></i> Contact Me </a>
         </li>
     </div>
   </nav>

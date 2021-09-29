@@ -1,5 +1,5 @@
 body {
-    color: #ffffff;
+    color: #90654B;
 	background-color: #F9F3EC
 }
 
@@ -12,7 +12,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
-h3 {
+h3,h4 {
     color: #90654B;
     font-size: 200%;
     font-family: Arial, sans-serif;
@@ -23,16 +23,13 @@ h3 {
 
 
 p {
-    color: white;
+    color: #90654B;
     font-size: 150%;
     font-family: Arial, sans-serif;
     margin-right: auto;
 }
 
-#Registration label, #Registration input, #Registration select {
-    margin-left: 2em;
-    
-}
+
 form {
     font-weight: bold;
     color:#90654B;

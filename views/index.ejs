@@ -3,12 +3,37 @@
 <%- include partials/main_nav.ejs %>
   
 
-  <!-- Main Content -->
+  <!-- Tile display based on selection -->
   <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
-      
-    </div>
+    <h3 class="display-4"> <%= title %> page</h3>
+
+    <!-- Home page content-->
+     <% if (title == "Home"){ %>
+        <p> Hello! I am Sahil Shah. Welcome to my express portfolio </p>
+        <p> You will be able to find additional information on me by choosing <a href="/about">"About me"</a> option  </p>
+        <br>
+        <p><h2><u><b> MISSION STATEMENT</b></u></h2></p>
+        <p> You won't know till you wont try! </p>
+
+    <!-- About Me content-->
+        <% } else if (title == "About Me") { %>
+        
+        
+
+    <!-- Projects content-->
+        <% }else if (title == "Projects") { %>
+        
+        
+    
+    <!-- Services content-->
+        <% } else if (title == "Services") { %>
+        
+        
+
+    <!-- Contact Me content-->
+       <% } else if (title == "Contact Me") { %>
+        
+        <% } %>
   </main>
   
 <%- include partials/bottom_nav.ejs %>  
