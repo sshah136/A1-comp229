@@ -1,1 +1,51 @@
-/* custom css goes here */
+body {
+    color: #ffffff;
+	background-color: #F9F3EC
+}
+
+
+
+h2 {
+    color: #90654B;
+    font-size: 250%;
+    font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3 {
+    color: #90654B;
+    font-size: 200%;
+    font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+p {
+    color: white;
+    font-size: 150%;
+    font-family: Arial, sans-serif;
+    margin-right: auto;
+}
+
+#Registration label, #Registration input, #Registration select {
+    margin-left: 2em;
+    
+}
+form {
+    font-weight: bold;
+    color:#90654B;
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+    margin-right: auto;
+}
+input, select{
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+    margin-bottom: 1em;
+    background-color: #90654B;
+    color: white;
+    border-radius: 0.3em;
+    width: 14em;
+}
