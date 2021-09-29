@@ -5,7 +5,7 @@
 
   <!-- Tile display based on selection -->
   <main class="container">
-    <h3 class="display-4"> <%= title %> page</h3>
+    <h3 class="display-4"> <%= title %> </h3>
 
     <!-- Home page content-->
      <% if (title == "Home"){ %>
@@ -17,7 +17,11 @@
 
     <!-- About Me content-->
         <% } else if (title == "About Me") { %>
-        
+          <img src="/Assets/images/profilepic.jpg" alt="" width="300" height="300"> 
+          <br><br>
+          <p>I'm Sahil Shah, currently enrolled at Centennial College in Software Engineering & AI course</p>
+          <p>I'm interested in exploring the field of Machine Learning and Data Science while strengthening the fundamentals of Software Engineering. I hold a Bachelors degree in Biotech Engineering and have roughly 6 years of work experience working in the Quality Assurance department of Food Manufacturing industry </p>
+          <p>Please feel free to check out my <a href=/Assets/documents/Resume.pdf>Resume</a> for additional details</p>
         
 
     <!-- Projects content-->
