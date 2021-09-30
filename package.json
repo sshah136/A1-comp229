@@ -1,11 +1,14 @@
 {
-  "name": "comp229-f2020-week3",
+  "name": "comp229-a1-300727537",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
   },
-  
+  "engines": {
+    "node": "^16.10.0",
+    "npm": "^7.24.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "bootstrap": "^4.5.2",
@@ -17,5 +20,18 @@
     "jquery": "^3.5.1",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "description": "Assignment 1 - Express portfolio",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sshah136/A1-comp229.git"
+  },
+  "author": "Sahil Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sshah136/A1-comp229/issues"
+  },
+  "homepage": "https://github.com/sshah136/A1-comp229#readme"
 }
