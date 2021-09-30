@@ -1,0 +1,19 @@
+<!-- Contact Me content-->
+       <% if (title == "Contact Me") { %>
+        <article>
+        <h2>&nbsp Form Validation</h2>
+        <form method="post" id="Registration" name="Registration" onsubmit="return validateForm()">
+            <label for="FirstName">First Name:</label><br />
+            <input id="FirstName" type="text" name="FirstName" placeholder="John"><br />
+            <label for="LastName">Last Name:</label><br />
+            <input id="LastName" type="text" name="LastName" placeholder="Doe"><br />
+            <label for="Email">Email:</label><br />
+            <input id="Email" type="text" name="Email" placeholder="email@example.com"><br />
+            <label for="Phone">Phone No.:</label><br />
+            <input id="Phone" type="text" name="Phone"><br />
+            <label for="Message">Message:</label><br />
+            <input id="Message" type="text" name="Email" placeholder="Please type your message.." style="height:150px"><br />
+            <input id="submit" type="button" name="submit" onclick = "window.location.href='/home'"  value="Send Now"  >
+            <input id="reset" type="reset" name="clear" value="Clear Form">
+        </form>
+    </article> <% } %>

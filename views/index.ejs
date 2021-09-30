@@ -7,23 +7,17 @@
   <main class="container">
     <h3 class="display-4"> <%= title %> </h3>
 
-    <!-- Home page content-->
-     <% if (title == "Home"){ %>
-        <p> Hello! I am Sahil Shah. Welcome to my express portfolio </p>
-        <p> You will be able to find additional information on me by choosing <a href="/about">"About me"</a> option  </p>
-        <br>
-        <p><h2><u><b> MISSION STATEMENT</b></u></h2></p>
-        <p> You won't know till you wont try! </p>
+    <%- include partials/homepage.ejs %>
+    <%- include partials/contactme.ejs %>
 
     <!-- About Me content-->
-        <% } else if (title == "About Me") { %>
+        <% if (title == "About Me") { %>
           <img src="/Assets/images/profilepic.jpg" alt="" width="300" height="300"> 
           <br><br>
           <p>I'm Sahil Shah, currently enrolled at Centennial College in Software Engineering & AI course</p>
           <p>I'm interested in exploring the field of Machine Learning and Data Science while strengthening the fundamentals of Software Engineering. I hold a Bachelors degree in Biotech Engineering and have roughly 6 years of work experience working in the Quality Assurance department of Food Manufacturing industry </p>
           <p>Please feel free to check out my <a href=/Assets/documents/Resume.pdf>Resume</a> for additional details</p>
         
-
     <!-- Projects content-->
         <% }else if (title == "Projects") { %>
           <div class="row">
@@ -59,48 +53,21 @@
               <p>Data Analytics</p>
               <img src="/Assets/images/analytics.jpg"alt="" width="333" height="333">
               </div>
-
               <!--Column 2-->
               <div class="column">
               <p>Web Development</p>
               <img src="/Assets/images/webdev.jpg"alt="" width="333" height="333">
               </div>
-
               <!--Column 3-->
               <div class="column">
               <p>Technical Consulting </p>
               <img src="/Assets/images/Consulting.jpg"alt="" width="333" height="333">
               </div>
           </div>
-        
 
-    <!-- Contact Me content-->
-       <% } else if (title == "Contact Me") { %>
-        <article>
-        <h2>&nbsp Form Validation</h2>
-        <form method="post" id="Registration" name="Registration" onsubmit="return validateForm()">
-            <label for="FirstName">First Name:</label><br />
-            <input id="FirstName" type="text" name="FirstName" placeholder="John"><br />
-            <label for="LastName">Last Name:</label><br />
-            <input id="LastName" type="text" name="LastName" placeholder="Doe"><br />
-            <label for="Email">Email:</label><br />
-            <input id="Email" type="text" name="Email" placeholder="email@example.com"><br />
-            <label for="Phone">Phone No.:</label><br />
-            <input id="Phone" type="text" name="Phone"><br />
-            <label for="Message">Message:</label><br />
-            <input id="Message" type="text" name="Email" placeholder="Please type your message.." style="height:150px"><br />
-            <input id="submit" type="button" name="submit" onclick = "window.location.href='/home'"  value="Send Now"  >
-            <input id="reset" type="reset" name="clear" value="Clear Form">
-        </form>
-    </article>
         <% } %>
   </main>
   
 <%- include partials/bottom_nav.ejs %>  
-
 <%- include partials/footer.ejs %>
   
-
-
-
-
