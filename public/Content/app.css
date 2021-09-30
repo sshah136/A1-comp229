@@ -2,8 +2,11 @@ body {
     color: #90654B;
 	background-color: #F9F3EC
 }
-
-
+.column {
+    float: left;
+    width: 33.33%;
+  }
+ 
 
 h2 {
     color: #90654B;
